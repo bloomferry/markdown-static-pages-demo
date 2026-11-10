@@ -248,3 +248,81 @@
 @media (max-width: 40rem) {
   .bf-site [data-bf-component="gallery"] ul { grid-template-columns: minmax(0, 1fr); }
 }
+
+
+:root {
+  color-scheme: light;
+  --console-background: #e8edf2;
+  --console-surface: #f8fafc;
+  --console-panel: #eaf0f6;
+  --console-text: #192735;
+  --console-muted: #40556a;
+  --console-accent: #175449;
+  --console-border: #64788c;
+  --console-focus: #134fb0;
+}
+:root[data-bf-theme="dark"] {
+  color-scheme: dark;
+  --console-background: #0b1018;
+  --console-surface: #121b27;
+  --console-panel: #1c2939;
+  --console-text: #e1e9f2;
+  --console-muted: #a9bad0;
+  --console-accent: #88dfc3;
+  --console-border: #72859c;
+  --console-focus: #9cc8ff;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-bf-theme]) {
+    color-scheme: dark;
+    --console-background: #0b1018;
+    --console-surface: #121b27;
+    --console-panel: #1c2939;
+    --console-text: #e1e9f2;
+    --console-muted: #a9bad0;
+    --console-accent: #88dfc3;
+    --console-border: #72859c;
+    --console-focus: #9cc8ff;
+  }
+}
+body { margin: 0; background: var(--console-background); }
+.bf-site {
+  --bf-color-surface: var(--console-surface);
+  --bf-color-card: var(--console-panel);
+  --bf-color-text: var(--console-text);
+  --bf-color-muted: var(--console-muted);
+  --bf-color-border: var(--console-border);
+  --bf-color-focus: var(--console-focus);
+  --bf-font-body: ui-monospace, SFMono-Regular, Consolas, monospace;
+  --bf-font-heading: var(--bf-font-body);
+  max-inline-size: 76ch;
+  margin: clamp(.5rem, 3vw, 2rem) auto;
+  border: 1px solid var(--bf-color-border);
+  border-radius: .65rem;
+}
+.bf-console-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: .75rem;
+  margin-block-end: 1.5rem;
+  padding-block-end: .75rem;
+  border-block-end: 1px solid var(--bf-color-border);
+  color: var(--bf-color-muted);
+  font-size: .875rem;
+}
+.bf-console-prompt, .bf-site a { color: var(--console-accent); }
+.bf-console-bar select {
+  font: inherit;
+  color: var(--bf-color-text);
+  background: var(--bf-color-card);
+  border: 1px solid var(--bf-color-border);
+  border-radius: .25rem;
+  padding: .3em;
+}
+.bf-console-bar select:focus-visible {
+  outline: 3px solid var(--bf-color-focus);
+  outline-offset: 3px;
+}
+.bf-site h1 { font-size: clamp(1.65rem, 5vw, 2.5rem); }
