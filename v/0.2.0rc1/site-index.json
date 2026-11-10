@@ -1,0 +1,64 @@
+{
+  "assets": [
+    {
+      "source": "data/sample.csv",
+      "url": "assets/data/sample.csv"
+    }
+  ],
+  "base_url": "./",
+  "builder": {
+    "distribution": "bloomferry-vendor-cli",
+    "renderer_css_sha256": "1b465ee5cf17e7c601f2e5f22628ff71a50d1d131139e89dc1173a32f91b60ec",
+    "source_sha256": "cdf32de67ffeca7e2ac91e9f8e1f019e1675ee0d77e79da3883abe334247ca11",
+    "version": "0.1.0.dev2",
+    "version_parser": {
+      "distribution": "packaging",
+      "version": "26.3"
+    }
+  },
+  "docs_revision": {
+    "commit": "9ef7f94ff15c458b9672c0e48e2ee083fc695f49",
+    "tag": "docs-v0.2.0rc1"
+  },
+  "docs_version": "0.2.0rc1",
+  "documented_cli": {
+    "artifact_sha256": "51a5787b737f39cd3114a7b62bb18badfb59136e439caee39366a4810ae9fbe5",
+    "version": "0.2.0rc1"
+  },
+  "links": [
+    {
+      "source": "index.md",
+      "target": "workflows/import.md",
+      "url": "workflows/import/index.html"
+    },
+    {
+      "source": "workflows/import.md",
+      "target": "data/sample.csv",
+      "url": "assets/data/sample.csv"
+    }
+  ],
+  "pages": [
+    {
+      "anchors": [
+        "tagged-020rc1"
+      ],
+      "markdown": "# Tagged 0.2.0rc1\n\n[Import](workflows/import.md#retained).\n",
+      "markdown_url": "index.html.md",
+      "source": "index.md",
+      "title": "Tagged 0.2.0rc1",
+      "url": "index.html"
+    },
+    {
+      "anchors": [
+        "import",
+        "retained"
+      ],
+      "markdown": "# Import\n\n## Retained\n\n[Download](../data/sample.csv).\n\nNew guidance.\n",
+      "markdown_url": "workflows/import/index.html.md",
+      "source": "workflows/import.md",
+      "title": "Import",
+      "url": "workflows/import/index.html"
+    }
+  ],
+  "schema": "bloomferry-docs-index-v1"
+}

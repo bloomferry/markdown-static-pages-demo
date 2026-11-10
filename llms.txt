@@ -1,0 +1,9 @@
+# Versioned documentation
+
+> The explicitly selected stable default is 0.1.10. Select the version matching the installed CLI. Preview docs are labelled.
+
+## Versions
+
+- [0.1.9](v/0.1.9/llms.txt)
+- [0.1.10](v/0.1.10/llms.txt)
+- [0.2.0rc1 (preview)](v/0.2.0rc1/llms.txt)

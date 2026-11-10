@@ -1,0 +1,75 @@
+{
+  "assets": [
+    {
+      "source": "data/sample.csv",
+      "url": "assets/data/sample.csv"
+    }
+  ],
+  "base_url": "./",
+  "builder": {
+    "distribution": "bloomferry-vendor-cli",
+    "renderer_css_sha256": "1b465ee5cf17e7c601f2e5f22628ff71a50d1d131139e89dc1173a32f91b60ec",
+    "source_sha256": "cdf32de67ffeca7e2ac91e9f8e1f019e1675ee0d77e79da3883abe334247ca11",
+    "version": "0.1.0.dev2",
+    "version_parser": {
+      "distribution": "packaging",
+      "version": "26.3"
+    }
+  },
+  "docs_revision": {
+    "commit": "2ec81d01f5dccb23f27236ec7ed63c41847a0655",
+    "tag": "docs-v0.1.9"
+  },
+  "docs_version": "0.1.9",
+  "documented_cli": {
+    "artifact_sha256": "51236fb3aface1b9e89f5494ec73f719902988a6a86c8f2bdcbd318757aa8200",
+    "version": "0.1.9"
+  },
+  "links": [
+    {
+      "source": "index.md",
+      "target": "workflows/import.md",
+      "url": "workflows/import/index.html"
+    },
+    {
+      "source": "workflows/import.md",
+      "target": "data/sample.csv",
+      "url": "assets/data/sample.csv"
+    }
+  ],
+  "pages": [
+    {
+      "anchors": [
+        "tagged-019"
+      ],
+      "markdown": "# Tagged 0.1.9\n\n[Import](workflows/import.md#retained).\n",
+      "markdown_url": "index.html.md",
+      "source": "index.md",
+      "title": "Tagged 0.1.9",
+      "url": "index.html"
+    },
+    {
+      "anchors": [
+        "legacy-page"
+      ],
+      "markdown": "# Legacy page\n",
+      "markdown_url": "legacy/index.html.md",
+      "source": "legacy.md",
+      "title": "Legacy page",
+      "url": "legacy/index.html"
+    },
+    {
+      "anchors": [
+        "import",
+        "removed",
+        "retained"
+      ],
+      "markdown": "# Import\n\n## Retained\n\n[Download](../data/sample.csv).\n\n## Removed\n\nOld heading.\n",
+      "markdown_url": "workflows/import/index.html.md",
+      "source": "workflows/import.md",
+      "title": "Import",
+      "url": "workflows/import/index.html"
+    }
+  ],
+  "schema": "bloomferry-docs-index-v1"
+}

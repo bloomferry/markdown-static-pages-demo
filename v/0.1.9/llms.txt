@@ -1,0 +1,13 @@
+# Tagged docs
+
+> Static documentation. This index and its linked JSON contain the same public source content as the HTML.
+
+## Machine-readable content
+
+- [Page text, routes, heading anchors, and local references](site-index.json)
+
+## Pages
+
+- [index.md](index.html.md): Tagged 0.1.9
+- [legacy.md](legacy/index.html.md): Legacy page
+- [workflows/import.md](workflows/import/index.html.md): Import
