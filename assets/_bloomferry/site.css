@@ -313,15 +313,18 @@ body { margin: 0; background: var(--console-background); }
   font-size: .875rem;
 }
 .bf-console-prompt, .bf-site a { color: var(--console-accent); }
-.bf-console-bar select {
-  font: inherit;
-  color: var(--bf-color-text);
-  background: var(--bf-color-card);
-  border: 1px solid var(--bf-color-border);
-  border-radius: .25rem;
-  padding: .3em;
+.bf-theme-choice {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem .75rem;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
-.bf-console-bar select:focus-visible {
+.bf-theme-choice legend { padding: 0; }
+.bf-theme-choice label { color: var(--bf-color-text); }
+.bf-theme-choice input { accent-color: var(--console-accent); }
+.bf-theme-choice input:focus-visible {
   outline: 3px solid var(--bf-color-focus);
   outline-offset: 3px;
 }
